@@ -9,8 +9,7 @@ To build and deploy a **simple file uploader web application** that allows users
 The application demonstrates the use of **Python (Flask)**, **Bootstrap**, and **cloud deployment** using **Render (serverless hosting)**.  
 
 ---
-🌐 Hosted App: https://progress-file-uploader-zaid.onrender.com
-   💻 GitHub Repo: https://github.com/mohdzaid145256/progress-file-uploader-zaid
+🌐 Hosted App: https://progress-file-uploader-zaid.onrender.com 💻 GitHub Repo: https://github.com/mohdzaid145256/progress-file-uploader-zaid
 
 
 ---
