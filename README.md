@@ -1,138 +1,122 @@
-# ☁️ Progress File Uploader – AWS Cloud Integration
+# ☁️ Progress File Uploader – Multi-Cloud Deployment (Render + AWS)
 
-**Live Demo:**
+**🌐 Live Demo (Render):**
 👉 [https://progress-file-uploader-zaid.onrender.com](https://progress-file-uploader-zaid.onrender.com)
 
-**GitHub Repository:**
+**☁️ Live Demo (AWS S3 Hosting):**
+👉 [https://progress-file-uploader-zaid.s3.us-east-2.amazonaws.com](https://progress-file-uploader-zaid.s3.us-east-2.amazonaws.com)
+
+**💻 GitHub Repository:**
 🔗 [https://github.com/mohdzaid145256/progress-file-uploader-zaid](https://github.com/mohdzaid145256/progress-file-uploader-zaid)
 
 ---
 
 ## 🚀 Objective
 
-Developed a **secure, full-stack web application** that enables users to upload files to **AWS S3 Cloud Storage**.
-This task demonstrates cloud integration, metadata handling, and security validation while maintaining a professional, production-ready UI.
+Built a **secure, full-stack file upload web application** integrated with **AWS S3 Cloud Storage** and deployed publicly on **Render**.
+This project demonstrates hands-on skills in **Flask backend development**, **AWS integration**, **secure file handling**, and **responsive UI design**.
 
 ---
 
-## 🧩 Features
+## 🧩 Key Features
 
-* ✅ Direct upload to AWS S3 (secure, server-side handling)
-* ✅ Supports common formats: `.pdf`, `.jpg`, `.png`, `.txt`, `.csv`
-* ✅ 10 MB file-size limit with validation
-* ✅ Auto-timestamped filenames for version control
-* ✅ Real-time metadata logging (filename, size, type, timestamp)
-* ✅ Clean Flask backend + responsive frontend
-* ✅ Error-handled responses for a smooth user experience
-* ✅ Deployed demo via **Render**
+* ✅ **AWS S3 integration** for secure and scalable file storage
+* ✅ **Multiple format support** – `.pdf`, `.png`, `.jpg`, `.txt`, `.csv`
+* ✅ **File-size limit (10 MB)** for efficient resource use
+* ✅ **File type validation** for security
+* ✅ **Metadata logging** (filename, size, type, timestamp, URL)
+* ✅ **Modern UI** with animated progress bar
+* ✅ **Public file link** generation after upload
+* ✅ **Error handling with JSON responses**
+* ✅ **Deployed on both AWS & Render**
 
 ---
 
 ## 🧱 Tech Stack
 
-**Frontend:** HTML + CSS + JS
-**Backend:** Python (Flask)
-**Cloud:** AWS S3 (Region – `us-east-2`, Ohio)
-**Deployment:** Render (Free Cloud Hosting)
-**AI Assistance:** ChatGPT (GPT-5) for code optimization and UI improvement
+**Frontend:** HTML, CSS, Bootstrap, JavaScript
+**Backend:** Flask (Python)
+**Cloud:** AWS S3 (Region: `us-east-2`, Ohio)
+**Deployment:** Render (App Hosting) + AWS (File Storage)
 
 ---
 
-## ⚙️ Setup Steps
+## ⚙️ Setup & Run Locally
 
-### 1. Clone the Repo
+### 1️⃣ Clone Repository
 
 ```bash
 git clone https://github.com/mohdzaid145256/progress-file-uploader-zaid.git
 cd progress-file-uploader-zaid
 ```
 
-### 2. Create Virtual Environment & Activate
+### 2️⃣ Setup Virtual Environment
 
 ```bash
 python3 -m venv venv
 source venv/bin/activate
 ```
 
-### 3. Install Dependencies
+### 3️⃣ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Configure AWS Credentials
+### 4️⃣ Configure AWS Credentials
 
-Either export them as environment variables:
+Set your credentials as environment variables:
 
 ```bash
 export AWS_ACCESS_KEY_ID="your_access_key"
 export AWS_SECRET_ACCESS_KEY="your_secret_key"
+export AWS_REGION="us-east-2"
+export AWS_BUCKET_NAME="progress-file-uploader-zaid"
 ```
 
-Or add them directly in `app.py` (for testing only).
-
-### 5. Run the Application
+### 5️⃣ Run Application
 
 ```bash
 python -m flask --app app run --debug
 ```
 
-Visit 👉 **[http://127.0.0.1:5000](http://127.0.0.1:5000)**
+Then visit 👉 [http://127.0.0.1:5000](http://127.0.0.1:5000)
 
 ---
 
-## 📂 File Structure
+## 📂 Project Structure
 
 ```
 progress-file-uploader-zaid/
 │
-├── app.py               # Flask backend with S3 upload logic
+├── app.py              # Flask backend with AWS S3 logic
 ├── templates/
-│   └── index.html       # Frontend UI for upload
-├── upload_log.txt       # Metadata logs (auto-created)
-├── requirements.txt     # Project dependencies
-└── README.md            # Documentation
+│   └── index.html      # Frontend upload UI with progress animation
+├── upload_log.txt      # Metadata log (auto-generated)
+├── requirements.txt    # Dependencies list
+└── README.md           # Documentation
 ```
 
 ---
 
-## 🧠 AI Usage & Automation
+## 🏆 Highlights & Learnings
 
-AI tools were leveraged responsibly to:
-
-* Refactor and comment Python code for readability
-* Generate user-friendly UI and polished layout
-* Add metadata logging, file validation, and secure upload flow
-* Optimize error messages and HTTP response formatting
-
----
-
-## 📊 Reflection
-
-This project deepened my understanding of **AWS S3 integration**, secure file handling, and deploying Flask apps on cloud platforms.
-I learned how to manage **access policies**, environment variables, and cross-origin communication between client and server.
-Configuring S3 permissions and debugging upload errors were valuable real-world challenges that enhanced my practical skills.
+* 🌍 Deployed the same backend across **Render and AWS**
+* 🔒 Applied **IAM-based access control** and S3 permissions
+* 🧾 Added **metadata tracking** for every uploaded file
+* 🧠 Strengthened understanding of **Flask–AWS integration**
+* 🧰 Followed **best practices** for secure cloud development
 
 ---
 
-## 🏆 Bonus Highlights
-
-* 🔒 Secure uploads with AWS IAM policies
-* 🧾 Metadata logging for audit & analytics
-* 📈 Validations for file type and size
-* 🌍 Public link generation for each uploaded file
-* 🧠 AI-powered refactoring and README drafting
-
----
-
-## 👨‍💻 Developed By
+## 👨‍💻 Developer
 
 **Mohd Zaid**
+📍 Sikar, Rajasthan, India
 📧 [mohdzaid4919@gmail.com](mailto:mohdzaid4919@gmail.com)
 🔗 [GitHub](https://github.com/mohdzaid145256) | [LinkedIn](https://www.linkedin.com/in/mohdzaid123)
 
 ---
 
-> *Part of the Progress Software Internship Challenge – Task 1 (AWS Cloud Integration)*
-
+> *Part of the Progress Software Internship Challenge – Task 1 (Cloud Integration with AWS & Render)*
 
