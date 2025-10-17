@@ -9,7 +9,8 @@ To build and deploy a **simple file uploader web application** that allows users
 The application demonstrates the use of **Python (Flask)**, **Bootstrap**, and **cloud deployment** using **Render (serverless hosting)**.  
 
 ---
-🌐 Hosted App: https://progress-file-uploader-zaid.onrender.com 💻 GitHub Repo: https://github.com/mohdzaid145256/progress-file-uploader-zaid
+🌐 Hosted App: https://progress-file-uploader-zaid.onrender.com\
+💻 GitHub Repo: https://github.com/mohdzaid145256/progress-file-uploader-zaid
 
 
 ---
@@ -20,6 +21,8 @@ The application demonstrates the use of **Python (Flask)**, **Bootstrap**, and *
 - **Hosting Platform:** Render (Serverless Cloud Deployment)  
 - **Storage:** Temporary storage in `/tmp/uploads` directory (cloud-hosted container storage)  
 
+---
+“The application is hosted on Render, a cloud-based serverless platform. The file storage currently uses Render’s temporary storage (/tmp), but the same Flask backend is fully compatible with AWS S3 or Google Cloud Storage for production environments.”
 ---
 
 ## 🧩 Features  
