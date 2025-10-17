@@ -1,62 +1,138 @@
+# ☁️ Progress File Uploader – AWS Cloud Integration
 
-# 📤 Progress File Uploader  
-**Developed by Mohd Zaid | Progress Software Internship Task (Cloud Platform Usage)**  
+**Live Demo:**
+👉 [https://progress-file-uploader-zaid.onrender.com](https://progress-file-uploader-zaid.onrender.com)
 
----
-
-## 🚀 Objective  
-To build and deploy a **simple file uploader web application** that allows users to upload any file (e.g., image, PDF, or text) and returns a **publicly accessible URL**.  
-The application demonstrates the use of **Python (Flask)**, **Bootstrap**, and **cloud deployment** using **Render (serverless hosting)**.  
-
----
-🌐 Hosted App: https://progress-file-uploader-zaid.onrender.com\
-💻 GitHub Repo: https://github.com/mohdzaid145256/progress-file-uploader-zaid
-
+**GitHub Repository:**
+🔗 [https://github.com/mohdzaid145256/progress-file-uploader-zaid](https://github.com/mohdzaid145256/progress-file-uploader-zaid)
 
 ---
 
-## ⚙️ Tech Stack  
-- **Frontend:** HTML5, CSS3, Bootstrap 5  
-- **Backend:** Python Flask  
-- **Hosting Platform:** Render (Serverless Cloud Deployment)  
-- **Storage:** Temporary storage in `/tmp/uploads` directory (cloud-hosted container storage)  
+## 🚀 Objective
 
----
-“The application is hosted on Render, a cloud-based serverless platform. The file storage currently uses Render’s temporary storage (/tmp), but the same Flask backend is fully compatible with AWS S3 or Google Cloud Storage for production environments.”
----
-
-## 🧩 Features  
-✅ Clean and responsive UI (Bootstrap)  
-✅ Real-time progress bar during upload  
-✅ Validations for file type and size  
-✅ Generates public file URL after successful upload  
-✅ Logs file metadata (filename, size, MIME type) to console  
-✅ Deployed on a live cloud endpoint (Render)  
+Developed a **secure, full-stack web application** that enables users to upload files to **AWS S3 Cloud Storage**.
+This task demonstrates cloud integration, metadata handling, and security validation while maintaining a professional, production-ready UI.
 
 ---
 
-## 🏗️ Setup Steps (Local Development)
+## 🧩 Features
 
-### 1️⃣ Clone the Repository
+* ✅ Direct upload to AWS S3 (secure, server-side handling)
+* ✅ Supports common formats: `.pdf`, `.jpg`, `.png`, `.txt`, `.csv`
+* ✅ 10 MB file-size limit with validation
+* ✅ Auto-timestamped filenames for version control
+* ✅ Real-time metadata logging (filename, size, type, timestamp)
+* ✅ Clean Flask backend + responsive frontend
+* ✅ Error-handled responses for a smooth user experience
+* ✅ Deployed demo via **Render**
+
+---
+
+## 🧱 Tech Stack
+
+**Frontend:** HTML + CSS + JS
+**Backend:** Python (Flask)
+**Cloud:** AWS S3 (Region – `us-east-2`, Ohio)
+**Deployment:** Render (Free Cloud Hosting)
+**AI Assistance:** ChatGPT (GPT-5) for code optimization and UI improvement
+
+---
+
+## ⚙️ Setup Steps
+
+### 1. Clone the Repo
+
 ```bash
 git clone https://github.com/mohdzaid145256/progress-file-uploader-zaid.git
 cd progress-file-uploader-zaid
+```
 
+### 2. Create Virtual Environment & Activate
 
-🧠 Reflection
-While building this project, I learned how to:
-Integrate Flask with HTML for a full-stack app.
-Implement AJAX file uploads with live progress tracking.
-Add validation and metadata logging in backend workflows.
-Deploy Flask apps on a cloud serverless platform (Render).
-Challenges included managing temporary file storage in a stateless environment, which was solved using Flask’s dynamic directory creation (os.makedirs()).
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
 
+### 3. Install Dependencies
 
-🧰 Bonus Enhancements
-File Size Limit: 10 MB max upload limit.
-File Type Validation: Only PDF, JPG, PNG, and TXT allowed.
-Metadata Logging: Logs file name, MIME type, size, and timestamp.
-AI-Enhanced Design: Used AI for code optimization and UI polishing.
-Clean UX: Success feedback and animated progress bar.
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Configure AWS Credentials
+
+Either export them as environment variables:
+
+```bash
+export AWS_ACCESS_KEY_ID="your_access_key"
+export AWS_SECRET_ACCESS_KEY="your_secret_key"
+```
+
+Or add them directly in `app.py` (for testing only).
+
+### 5. Run the Application
+
+```bash
+python -m flask --app app run --debug
+```
+
+Visit 👉 **[http://127.0.0.1:5000](http://127.0.0.1:5000)**
+
+---
+
+## 📂 File Structure
+
+```
+progress-file-uploader-zaid/
+│
+├── app.py               # Flask backend with S3 upload logic
+├── templates/
+│   └── index.html       # Frontend UI for upload
+├── upload_log.txt       # Metadata logs (auto-created)
+├── requirements.txt     # Project dependencies
+└── README.md            # Documentation
+```
+
+---
+
+## 🧠 AI Usage & Automation
+
+AI tools were leveraged responsibly to:
+
+* Refactor and comment Python code for readability
+* Generate user-friendly UI and polished layout
+* Add metadata logging, file validation, and secure upload flow
+* Optimize error messages and HTTP response formatting
+
+---
+
+## 📊 Reflection
+
+This project deepened my understanding of **AWS S3 integration**, secure file handling, and deploying Flask apps on cloud platforms.
+I learned how to manage **access policies**, environment variables, and cross-origin communication between client and server.
+Configuring S3 permissions and debugging upload errors were valuable real-world challenges that enhanced my practical skills.
+
+---
+
+## 🏆 Bonus Highlights
+
+* 🔒 Secure uploads with AWS IAM policies
+* 🧾 Metadata logging for audit & analytics
+* 📈 Validations for file type and size
+* 🌍 Public link generation for each uploaded file
+* 🧠 AI-powered refactoring and README drafting
+
+---
+
+## 👨‍💻 Developed By
+
+**Mohd Zaid**
+📧 [mohdzaid4919@gmail.com](mailto:mohdzaid4919@gmail.com)
+🔗 [GitHub](https://github.com/mohdzaid145256) | [LinkedIn](https://www.linkedin.com/in/mohdzaid123)
+
+---
+
+> *Part of the Progress Software Internship Challenge – Task 1 (AWS Cloud Integration)*
 
 
