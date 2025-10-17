@@ -10,7 +10,7 @@ The application demonstrates the use of **Python (Flask)**, **Bootstrap**, and *
 
 ---
 🌐 Hosted App: https://progress-file-uploader-zaid.onrender.com
-💻 GitHub Repo: https://github.com/mohdzaid145256/progress-file-uploader-zaid
+   💻 GitHub Repo: https://github.com/mohdzaid145256/progress-file-uploader-zaid
 
 
 ---
