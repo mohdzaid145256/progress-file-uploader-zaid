@@ -30,7 +30,7 @@ def index():
 
             file_url = url_for("uploaded_file", filename=filename, _external=True)
             print(f"✅ File uploaded successfully: {file_url}")
-            return render_template("index.html", file_url=file_url)
+            return {"success": True, "file_url": file_url}, 200
 
         except Exception as e:
             print(f"❌ Error while uploading: {e}")
